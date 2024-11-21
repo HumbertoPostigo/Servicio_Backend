@@ -1,0 +1,16 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Campo1</th>
+        <th scope="col">Campo2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of registros">
+        <th scope="row">{{item?._ID}}</th>
+        <td>{{item?.Campo1}}</td>
+        <td>{{item?.Campo2}}</td>
+      </tr>
+    </tbody>
+  </table>
